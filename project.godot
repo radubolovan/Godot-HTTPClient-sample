@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=3
+
+[application]
+
+config/name="HttpSample"
+run/main_scene="res://main.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+g_http="*res://http.gd"
+
+[display]
+
+window/size/width=1600
+window/size/height=900
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
